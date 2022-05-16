@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- bootstrap container class with margin classes -->
+    <div class="container my-5 mx-auto " style="border: 1px solid black;">
+
+
+        <!-- text-muted for gray color -->
+        <!-- text-center for center aligned text on all viewport sizes -->
+
+        <h1 class="text-muted text-center my-4">
+            Weather app
+        </h1>
+
+        <!-- change-location own class -->
+        <form class="change-location my-4 text-center text-muted">
+
+            <label for="city">Enter a location for weather information</label>
+            <input type="text" name="city" class="form-control p-4 ">
+            <!--form-control bt class for forms-->
+        </form>
+        <!-- d-none bt cls display none -->
+        <div class="card shadow-lg rounded d-none">
+            <img src='https://via.placeholder.com/400x300' class="time card-img-top">
+
+            <!--card img top to place image on top of card-->
+
+            <!-- icon class is ours rest is of bootstrap -->
+
+            <div class="icon bg-light mx-auto text-center">
+                <img src="" alt="">
+            </div>
+
+            <!-- details class for details about weather -->
+            <div class="text-muted text-uppercase text-center details">
+
+                <h5 class="my-3">
+                    City name
+                </h5>
+                <div class="my-3">
+                    Weather condition
+                </div>
+
+                <!-- display cls for heading to standout,text will be big -->
+                <div class="display-4 my-4">
+
+                    <span>temp</span>
+                    <span>&deg;C</span>
+
+                </div>
+            </div>
+        </div>
+        <!--card for making card,shadow for large shadow n rounded for round corneres-->
+
+
+    </div>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
